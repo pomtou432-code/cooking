@@ -45,7 +45,7 @@ const popularRecipes = [
     time: "15 นาที",
     rating: 4.8,
     gradient: "from-red-200 to-orange-200",
-    image: "../img/khao-pad-goong.jpg",
+    image: "img/khao-pad-goong.jpg",
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ const popularRecipes = [
     time: "45 นาที",
     rating: 4.9,
     gradient: "from-pink-200 to-rose-200",
-    image: "../img/brownie.jpg",
+    image: "img/brownie.jpg",
   },
   {
     id: 3,
@@ -72,7 +72,7 @@ const popularRecipes = [
     time: "10 นาที",
     rating: 4.6,
     gradient: "from-green-200 to-emerald-200",
-    image: "../img/smoothies.jpg",
+    image: "img/smoothies.jpg",
   },
 ];
 
@@ -125,7 +125,7 @@ const recipes = [
     difficulty: "ง่าย",
     description:
       "ข้าวผัดกุ้งสูตรพิเศษ หอม อร่อย ทำง่าย เหมาะสำหรับมื้อเช้าและมื้อเย็น",
-    image: "../img/khao-pad-goong.jpg",
+    image: "img/khao-pad-goong.jpg",
     ingredients: [
       { name: "ข้าวสวย", amount: "2 ทัพพี" },
       { name: "กุ้งสด", amount: "200 กรัม" },
@@ -160,7 +160,7 @@ const recipes = [
     "servings": "1 - 2",
     "difficulty": "ง่าย",
     "description": "ผัดกะเพราหมูสูตรต้นตำรับ รสจัด หอมกะเพรา เสิร์ฟพร้อมไข่ดาวแบบไทยแท้",
-    "image": "../img/pad-kaprao-moo.jpg",
+    "image": "img/pad-kaprao-moo.jpg",
     "ingredients": [
       { "name": "หมูบด", "amount": "1 ถ้วย" },
       { "name": "ใบกะเพรา (โหระพาห้ามใช้)", "amount": "2 ถ้วย" },
@@ -203,7 +203,7 @@ const recipes = [
     servings: 8,
     difficulty: "ปานกลาง",
     description: "บราวนี่ช็อกโกแลตเนื้อหนึบ หอมเข้มข้น",
-    image: "../img/brownie.jpg",
+    image: "img/brownie.jpg",
     ingredients: [
       { name: "ช็อกโกแลตดำ", amount: "200 กรัม" },
       { name: "เนย", amount: "150 กรัม" },
@@ -253,7 +253,7 @@ const recipes = [
     servings: 2,
     difficulty: "ง่าย",
     description: "สมูทตี้ผลไม้รวมสดชื่น เต็มไปด้วยวิตามิน เหมาะสำหรับอาหารเช้าหรือของว่างเพื่อสุขภาพ",
-    image: "../img/smoothies.jpg",
+    image: "img/smoothies.jpg",
     ingredients: [
       { name: "กล้วยหอม", amount: "1 ลูก" },
       { name: "สตรอว์เบอร์รี่", amount: "100 กรัม" },
@@ -287,7 +287,7 @@ const recipes = [
     servings: 1,
     difficulty: "ปานกลาง",
     description: "ผัดไทยสูตรดั้งเดิม รสชาติกลมกล่อมครบ 3 รส เปรี้ยว หวาน เค็ม พร้อมกุ้งสด เต้าหู้ และถั่วงอก เหมาะสำหรับทำเป็นอาหารจานเดียว",
-    image: "../img/padthai.png",
+    image: "img/padthai.png",
     ingredients: [
       { name: "เส้นจันท์แช่น้ำ", amount: "150 กรัม" },
       { name: "กุ้งสด", amount: "6–8 ตัว" },
@@ -334,7 +334,7 @@ const recipes = [
     servings: "2 - 4",
     difficulty: "ง่าย",
     description: "เมนูผัดพริกแกงรสจัดจ้าน ใส่มะเขือเปราะและใบโหระพา หอมพริกแกงแบบไทย ทำง่ายและใช้เวลาน้อย เหมาะกับกินคู่ข้าวหอมมะลิร้อนๆ",
-    image: "../img/spicy-chicken-eggplant.jpg",
+    image: "img/spicy-chicken-eggplant.jpg",
 
     ingredients: [
       { name: "น่องไก่ติดสะโพก (เลาะกระดูกและหนัง)", amount: "1 ชิ้นใหญ่" },
@@ -381,7 +381,7 @@ const recipes = [
     servings: 8,
     difficulty: "ง่าย",
     description: "ชาเย็นไทยสีส้มสด กลิ่นหอม รสหวานมัน ทำแบบเหยือกเก็บไว้แช่เย็นพร้อมเสิร์ฟได้ทุกเมื่อ เหมือนร้านอาหารไทยแท้ๆ",
-    image: "../img/thai-iced-tea.png",
+    image: "img/thai-iced-tea.png",
 
     ingredients: [
       { name: "น้ำเปล่า", amount: "2 ลิตร" },
@@ -422,7 +422,7 @@ const recipes = [
     difficulty: "ปานกลาง",
     description: "สะเต๊ะแบบไทยแท้ หมักด้วยเครื่องสมุนไพรอย่างตะไคร้ ข่า รากผักชี ขมิ้น และเครื่องเทศครบ ทำได้ทั้งหมูและไก่ ย่างหอม ๆ เสิร์ฟกับน้ำจิ้มถั่วและอาจาดอร่อยแบบต้นตำรับ",
 
-    image: "../img/satay.jpg",
+    image: "img/satay.jpg",
 
     ingredients: [
       { name: "สันในหมู หรือ อกไก่", amount: "3 ปอนด์" },
@@ -469,7 +469,7 @@ const recipes = [
     difficulty: "ง่าย",
     description: "ชาน้ำตะไคร้ใบเตยหอมสดชื่น ต้มจากตะไคร้สดและใบเตย กลิ่นหอมละมุนแบบไทย ๆ ดื่มเย็นหรือร้อนก็ได้ นิยมเสิร์ฟแบบหวานจัดตามสไตล์เครื่องดื่มไทย",
 
-    image: "../img/lemongrass-pandan-tea.jpg",
+    image: "img/lemongrass-pandan-tea.jpg",
 
     ingredients: [
       { name: "ตะไคร้", amount: "6–8 ต้น" },
@@ -511,7 +511,7 @@ const recipes = [
 และเป็นที่รู้จักในไทยมานานก่อนจะดังในต่างประเทศ ใบบัวบกมีรสเขียวจัด \
 จึงนิยมปรุงเป็นน้ำหวานเพื่อลดความเขียวของใบ",
 
-    image: "../img/asian-pennywort-juice.jpg",
+    image: "img/asian-pennywort-juice.jpg",
 
     ingredients: [
       { name: "ใบบัวบกสด", amount: "ประมาณ 1/3 กิโลกรัม (1 ปอนด์)" },
@@ -551,7 +551,7 @@ const recipes = [
 นิยมดื่มแบบเย็นและหวานจัดตามสไตล์ไทย เชื่อว่ามีสรรพคุณช่วยแก้อาการหวัด อักเสบ ช่วยขับปัสสาวะ \
 และแก้อาการเบื่ออาหาร เป็นเครื่องดื่มสมุนไพรไทยที่ทำง่ายและนิยมอย่างมาก",
 
-    image: "../img/hibiscus-drink.jpg",
+    image: "img/hibiscus-drink.jpg",
 
     ingredients: [
       { name: "ดอกกระเจี๊ยบแห้ง", amount: "1 ถ้วย" },
@@ -592,7 +592,7 @@ const recipes = [
 เสิร์ฟคู่กับมะม่วงสุกฉ่ำ โรยงาคั่วและราดด้วยกะทิข้นรสหวานเค็มเล็กน้อย \
 ให้สัมผัสหอม มัน หวาน และกลมกล่อม ทำไม่ยากและอร่อยเหมือนร้านดัง",
 
-    image: "../img/mango-sticky-rice.jpg",
+    image: "img/mango-sticky-rice.jpg",
 
     ingredients: [
       { name: "มะม่วงสุก", amount: "1–2 ลูก" },
@@ -650,7 +650,7 @@ const recipes = [
       "กุ้งทอดเกลือสูตรกลมกล่อม เนื้อกุ้งเด้ง หอมกระเทียมและเนย ผัดคลุกซอสจนเคลือบทั่วทั้งตัว \
 ให้รสเค็มหวานกำลังดี กรอบนอกนุ่มใน ทำง่ายแต่รสเหมือนร้านดัง",
 
-    image: "../img/salted-fried-shrimp.jpg",
+    image: "img/salted-fried-shrimp.jpg",
 
     ingredients: [
       { name: "กุ้งสด", amount: "500 กรัม" },
@@ -698,7 +698,7 @@ const recipes = [
 ผสมผสานใบยอและใบโหระพาช่วยเพิ่มความหอมแบบไทยแท้ นิยมทำใส่ถ้วยใบตอง \
 แล้วนึ่งจนฟูเนียน ก่อนราดหน้าด้วยกะทิข้นมันวาวและพริกชี้ฟ้าแดงซอย",
 
-    image: "../img/steamed-fish-curry.jpg",
+    image: "img/steamed-fish-curry.jpg",
 
     ingredients: [
       // ตัวห่อหมก
@@ -754,7 +754,7 @@ const recipes = [
       "ข้าวเหนียวเปียกลำไยเป็นของหวานไทยรสหอมหวาน ข้าวเหนียวนุ่มกำลังดี ต้มกับกะทิจนข้นมัน \
 ใส่ลำไยสดให้รสชาติหวานธรรมชาติ เสิร์ฟพร้อมหน้ากะทิเค็มมันเล็กน้อย ตัดรสลงตัวแบบไทยแท้",
 
-    image: "../img/longan-sticky-sweet-soup.jpg",
+    image: "img/longan-sticky-sweet-soup.jpg",
 
     ingredients: [
       // ตัวข้าวเหนียวเปียก
@@ -806,7 +806,7 @@ const recipes = [
       "เค้กไก่หยองมายองเนส เนื้อเค้กนุ่ม ฟู เบา หอมมัน ผสานกับรสมายองเนสหวานมัน \
 และไก่หยองสาหร่ายกรอบนัว ทำง่าย อร่อยเหมือนร้านดัง เหมาะทำขายหรือทำกินเองที่บ้าน",
 
-    image: "../img/chicken-floss-mayo-cake.jpg",
+    image: "img/chicken-floss-mayo-cake.jpg",
 
     ingredients: [
       // เนื้อเค้ก
@@ -867,7 +867,7 @@ const recipes = [
       "ทีรามิสุมัทฉะ หอมมันกลิ่นชาเขียวเข้มข้น ผสมครีมนุ่มละมุน \
 และเลดี้ฟิงเกอร์ซึมมัทฉะ ทำง่าย ไม่อบก็ทำได้ เหมาะทำกินหรือทำขาย",
 
-    image: "../img/matcha-tiramisu.jpg",
+    image: "img/matcha-tiramisu.jpg",
 
     ingredients: [
       // เลดี้ฟิงเกอร์ + มัทฉะ
@@ -923,7 +923,7 @@ const recipes = [
       "คุกกี้บราวนี่เนื้อหนึบ ขอบกรอบ หน้าฟิล์มเหมือนบราวนี่เข้มข้น \
 ทำง่าย ใช้วัตถุดิบน้อย กำไรดี เหมาะทั้งทำขายและทำกินเอง",
 
-    image: "../img/brownie-cookies.jpg",
+    image: "img/brownie-cookies.jpg",
 
     ingredients: [
       { name: "ไข่ไก่ เบอร์ 2", amount: "1 ฟอง" },
@@ -970,7 +970,7 @@ const recipes = [
       "มัทฉะน้ำมะพร้าวแบบแคลต่ำ สดชื่น หอมหวานธรรมชาติจากน้ำมะพร้าว \
 ชงง่าย เหมาะสำหรับคนลดน้ำหนักและคนรักสุขภาพ",
 
-    image: "../img/coconut-matcha.jpg",
+    image: "img/coconut-matcha.jpg",
 
     ingredients: [
       { name: "ผงมัทฉะ", amount: "1–1.5 ช้อนชา (สำหรับชงเข้มข้น)" },
@@ -1009,7 +1009,7 @@ const recipes = [
       "เฉาก๊วยนมสดแบบเจ ทำจากของในเซเว่นเพียง 2 อย่าง \
 สดชื่น หวานกำลังดี เฉาก๊วยหนึบ นมถั่วเหลืองหอมมัน ทำง่ายสุด ๆ เหมาะสำหรับเทศกาลกินเจ",
 
-    image: "../img/grassjelly-soymilk.jpg",
+    image: "img/grassjelly-soymilk.jpg",
 
     ingredients: [
       { name: "เฉาก๊วยพร้อมทาน", amount: "1 ถ้วย" },
@@ -1045,7 +1045,7 @@ const recipes = [
       "อ้อยควั่น เมนูกินเล่นสไตล์บ้าน ๆ หวานฉ่ำจากธรรมชาติ ไม่ต้องเติมน้ำตาล \
 เคี้ยวเพลิน เย็นชื่นใจ ทำง่าย ใช้อ้อยเพียงท่อนเดียวก็อร่อยได้",
 
-    image: "../img/chopped-sugarcane.jpg",
+    image: "img/chopped-sugarcane.jpg",
 
     ingredients: [
       { name: "อ้อย", amount: "1 ท่อน" }
@@ -1079,7 +1079,7 @@ const recipes = [
       "เมี่ยงคำ อาหารว่างไทยโบราณรสชาติจัดจ้าน ครบทุกมิติทั้งหวาน เค็ม มัน เผ็ด และเปรี้ยว \
 เสิร์ฟพร้อมน้ำราดหอมกะปิและสมุนไพร ทำง่าย ได้ประโยชน์ต่อสุขภาพ",
 
-    image: "../img/miang-kham.jpg",
+    image: "img/miang-kham.jpg",
 
     ingredients: [
       { name: "ใบชะพลู", amount: "ตามต้องการ" },
@@ -1137,7 +1137,7 @@ const recipes = [
     description:
       "ซุปผักโขมหอมมัน เนื้อเนียนละเอียด อุดมไปด้วยสารอาหาร ทำง่าย ใช้เวลาน้อย เหมาะสำหรับเป็นอาหารเช้าและเมนูเพื่อสุขภาพ",
 
-    image: "../img/spinach-soup.jpg",
+    image: "img/spinach-soup.jpg",
 
     ingredients: [
       { name: "ผักโขม", amount: "200 กรัม" },
@@ -1190,7 +1190,7 @@ const recipes = [
     description:
       "หมูแดดเดียวเนื้อนุ่ม รสกลมกล่อม ทำได้แม้ไม่มีแดด โดยใช้การอบแทนแดด เหมาะสำหรับทำกินเองหรือทำขาย",
 
-    image: "../img/sun-dried-pork.jpg",
+    image: "img/sun-dried-pork.jpg",
 
     ingredients: [
       { name: "เนื้อหมูสันคอ", amount: "1 กิโลกรัม" },
@@ -1240,7 +1240,7 @@ const recipes = [
     description:
       "ขนมจีบหมูเด้งสูตรลับจากอาม่า เนื้อเด้ง กลมกล่อม ทำง่ายเพียง 3 ขั้นตอน เหมาะทั้งทำกินและทำขาย",
 
-    image: "../img/pork-dimsum.jpg",
+    image: "img/pork-dimsum.jpg",
 
     ingredients: [
       { name: "กุ้งสับหยาบ", amount: "100 กรัม" },

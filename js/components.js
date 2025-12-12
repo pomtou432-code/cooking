@@ -49,8 +49,9 @@ function createCategoryCard(category) {
 function createRecipeCard(recipe) {
   // Determine if we should show image or gradient placeholder
   const hasImage = recipe.image && recipe.image.trim() !== '';
+  const imagePath = hasImage && window.getImagePath ? window.getImagePath(recipe.image) : recipe.image;
   const imageContent = hasImage
-    ? `<img src="${recipe.image}" alt="${recipe.name}" class="w-full h-full object-cover" />`
+    ? `<img src="${imagePath}" alt="${recipe.name}" class="w-full h-full object-cover" />`
     : createIcon(icons.chef, "w-16 h-16 text-white opacity-40");
 
   return `
@@ -132,7 +133,7 @@ function renderRecipeDetail(recipe) {
     if (thumb) {
       // prefer recipe.image, fallback to gradient placeholder or existing src
       if (recipe.image) {
-        thumb.src = recipe.image;
+        thumb.src = window.getImagePath ? window.getImagePath(recipe.image) : recipe.image;
       } else if (
         recipe.gradient &&
         thumb.dataset &&
@@ -146,7 +147,7 @@ function renderRecipeDetail(recipe) {
     // Update hero image
     const heroImg = document.getElementById("recipeHero");
     if (heroImg && recipe.image) {
-      heroImg.src = recipe.image;
+      heroImg.src = window.getImagePath ? window.getImagePath(recipe.image) : recipe.image;
       heroImg.alt = recipe.name || "สูตรอาหาร";
     }
   } catch (e) {
@@ -251,8 +252,9 @@ function renderRelatedRecipes(related, allRecipes) {
   // small card markup (reuse createRecipeCard but trimmed)
   items.forEach((recipe) => {
     const hasImage = recipe.image && recipe.image.trim() !== '';
+    const imagePath = hasImage && window.getImagePath ? window.getImagePath(recipe.image) : recipe.image;
     const imageContent = hasImage
-      ? `<img src="${recipe.image}" alt="${recipe.name}" class="w-16 h-16 rounded-md object-cover">`
+      ? `<img src="${imagePath}" alt="${recipe.name}" class="w-16 h-16 rounded-md object-cover">`
       : `<div class="w-16 h-16 rounded-md flex items-center justify-center bg-gradient-to-br ${recipe.gradient || 'from-gray-200 to-gray-300'}">${createIcon(icons.chef, "w-8 h-8 text-white")}</div>`;
 
     cardsHtml += `
@@ -295,8 +297,9 @@ function renderFeaturedSection() {
   // Main featured card
   if (mainRecipe) {
     const hasImage = mainRecipe.image && mainRecipe.image.trim() !== '';
+    const imagePath = hasImage && window.getImagePath ? window.getImagePath(mainRecipe.image) : mainRecipe.image;
     const imageContent = hasImage
-      ? `<img src="${mainRecipe.image}" alt="${mainRecipe.name}" class="w-full h-full object-cover">`
+      ? `<img src="${imagePath}" alt="${mainRecipe.name}" class="w-full h-full object-cover">`
       : `<div class="w-full h-full bg-gradient-to-br ${mainRecipe.gradient || 'from-red-200 to-orange-200'} flex items-center justify-center">${createIcon(icons.chef, "w-32 h-32 text-white opacity-40")}</div>`;
 
     html += `
@@ -333,8 +336,9 @@ function renderFeaturedSection() {
     if (!recipe) return;
 
     const hasImage = recipe.image && recipe.image.trim() !== '';
+    const imagePath = hasImage && window.getImagePath ? window.getImagePath(recipe.image) : recipe.image;
     const imageContent = hasImage
-      ? `<img src="${recipe.image}" alt="${recipe.name}" class="w-full h-full object-cover">`
+      ? `<img src="${imagePath}" alt="${recipe.name}" class="w-full h-full object-cover">`
       : `<div class="w-full h-full bg-gradient-to-br ${recipe.gradient || 'from-gray-200 to-gray-300'} flex items-center justify-center">${createIcon(icons.chef, "w-16 h-16 text-white opacity-40")}</div>`;
 
     html += `
